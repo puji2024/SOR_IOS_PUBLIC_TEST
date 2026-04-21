@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Install App</title>
+  <title>SOR App Install</title>
 </head>
 
 <body style="
@@ -11,28 +11,57 @@
   display:flex;
   justify-content:center;
   align-items:center;
-  font-family:-apple-system;
-  background:#f5f5f5;
+  background:#f2f2f7;
+  font-family:-apple-system, BlinkMacSystemFont;
 ">
 
-  <a href="itms-services://?action=download-manifest&url=https://puji2024.github.io/SOR_IOS_PUBLIC_TEST/manifest.plist">
-   <button style="
-      width: 80%;
-      max-width: 350px;
-      padding: 20px;
-      font-size: 22px;
-      border-radius: 14px;
-      border: none;
-      background-color: #007AFF;
-      color: white;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    ">
-      Install App
-    </button>
-  </a>
+  <div style="
+    background:white;
+    width:90%;
+    max-width:380px;
+    border-radius:20px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+  ">
 
-  <p>Scan QR:</p>
-  <img src="qrcode.png" width="200"/>
+    <!-- LOGO -->
+    <img src="logo.png" width="80" style="border-radius:20px; margin-bottom:15px;" />
+
+    <!-- APP NAME -->
+    <h2 style="margin:5px 0;">SOR App</h2>
+
+    <!-- VERSION -->
+    <p style="color:gray; font-size:14px; margin-bottom:20px;">
+      Version 1.0 • Build 1
+    </p>
+
+    <!-- QR -->
+    <img src="qrcode.png" width="180" style="margin-bottom:20px;" />
+
+    <!-- INSTALL BUTTON -->
+    <a href="itms-services://?action=download-manifest&url=https://puji2024.github.io/SOR_IOS_PUBLIC_TEST/manifest.plist">
+      <button style="
+        width:100%;
+        padding:18px;
+        font-size:20px;
+        border-radius:14px;
+        border:none;
+        background:#007AFF;
+        color:white;
+        font-weight:600;
+        box-shadow:0 4px 12px rgba(0,122,255,0.3);
+      ">
+        Install App
+      </button>
+    </a>
+
+    <!-- NOTE -->
+    <p style="font-size:12px; color:#999; margin-top:15px;">
+      Open in Safari to install
+    </p>
+
+  </div>
 
 </body>
 </html>
